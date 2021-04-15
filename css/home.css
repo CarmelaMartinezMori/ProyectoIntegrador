@@ -76,30 +76,53 @@ label.logo{
   align-items: center;
   width: 100%;
   background-color: #262727;
+  color: white;
+  line-height: 20px;
 }  
 
+
 .div1_1{
-  margin-top: 90px;
-  display: flex;
   width: 100%;
+  margin: 100px 5px 30px 5px;
+  
+  
 }
+
 .div1{
- margin-bottom: 5px; 
+  
+
 }
 
 h2{
   margin-left: 10px;
+}
+.unique{
+  display: flex;
+  
 }
 
 .list{
   display: flex;
   justify-content: space-around;
   width: 100%;
+  
 }
 
 .list li{
- 
-  width: 18%;
+  width: 19%;
+  
+}
+.list p, .list a{
+  color: white;
+  font-size: 6px;
+  
+ }
+
+#artists li{
+  width: 16%;
+}
+#artists img{
+  border-radius: 50%;
 }
 
 
@@ -128,7 +151,7 @@ h2{
       justify-content: space-around;
       margin: 20px 0 0;
       width: 80%; 
-    }  
+}  
 
 .redes a{
     display: flex;
@@ -210,6 +233,10 @@ h2{
    
 .contenido{
   margin-left: 15%;
+}
+
+.div1_1{
+  margin-top: 50px;
 }
 
 .footer{
