@@ -20,7 +20,6 @@ a:hover{
 #divart {
   background-image: linear-gradient( rgba(170, 68, 124, 1), rgba(48, 44, 44, 0));
   background-size: cover;
-  
   text-align: center;
   white-space: pre-line;
   line-height: 20px;
