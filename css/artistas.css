@@ -1,0 +1,61 @@
+
+.logo{
+    font-weight: lighter;
+}
+.div1_1{
+    margin: 0;
+    
+}
+#divart {
+  background-image: linear-gradient( rgba(170, 68, 124, 1), rgba(48, 44, 44, 0));
+  background-size: cover;
+  background-position: fixed;
+  text-align: center;
+  white-space: pre-line;
+  height: 30vhpx;
+  line-height: 20px;
+}
+
+.div1_1{
+    width: 100%;
+    margin: 80px 0 40px 0;  
+}
+
+ 
+
+h1{
+font-size: 45px;
+line-height: 60px; 
+}
+
+img{
+display: block;
+margin: auto;
+width: 35%;
+border-radius: 50%;
+
+}
+
+#foto{  
+
+    
+}
+
+h4{
+    font-weight: lighter;
+}
+
+#fav {
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+    
+    }
+
+.favplay{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 30px;
+}
