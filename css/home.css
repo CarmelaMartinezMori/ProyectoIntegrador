@@ -202,7 +202,7 @@ h2{
 @media (min-width:768px){
 
   .paginas li{
-    line-height: 120px;
+    line-height: 100px;
   }
   .paginas a{
     font-size: 22px;
@@ -248,7 +248,7 @@ h2{
   text-align: left;
 } 
 .paginas li{
-  line-height: 80px;
+  line-height: 60px;
 } 
   .paginas a{
   font-size: 18x; 

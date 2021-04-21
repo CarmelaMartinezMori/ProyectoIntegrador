@@ -1,0 +1,63 @@
+.todo a{
+    color: white;
+    font-size: 10px;
+ 
+}
+.nav{
+    display: flex;
+    
+    
+}
+.todo{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.todo li{
+    list-style-type: none;
+  width: 5%;
+
+    
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.details{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+    
+    
+}
+.card-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: 50%;
+    
+
+}
+.card-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+    margin: 5px;
+}

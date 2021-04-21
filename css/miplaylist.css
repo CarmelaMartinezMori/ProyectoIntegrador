@@ -1,0 +1,23 @@
+.fotoplaylist{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    white-space: pre-line;
+
+}
+
+.playlistimg{
+    width: 50%;
+}
+.JB{
+    font-size: 100px;
+}
+
+
+
+@media (min-width:1024px){
+
+
+
+}
