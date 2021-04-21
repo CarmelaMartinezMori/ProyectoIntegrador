@@ -1,4 +1,15 @@
 
+a{
+    color: white;
+}
+
+a:hover{
+    color: #02d287;
+}
+
+.topcaciones:hover{
+    color: white;
+}
 .logo{
     font-weight: lighter;
 }
@@ -9,11 +20,12 @@
 #divart {
   background-image: linear-gradient( rgba(170, 68, 124, 1), rgba(48, 44, 44, 0));
   background-size: cover;
-  background-position: fixed;
+  
   text-align: center;
   white-space: pre-line;
-  height: 30vhpx;
   line-height: 20px;
+  border: 100px;
+  border-color: black;
 }
 
 .div1_1{
@@ -36,26 +48,109 @@ border-radius: 50%;
 
 }
 
-#foto{  
 
-    
-}
 
-h4{
-    font-weight: lighter;
-}
 
-#fav {
-    display: inline-block;
-    position: relative;
-    font-size: 32px;
-    cursor: pointer;
-    
-    }
 
 .favplay{
     display: flex;
     justify-content: space-around;
     width: 40%;
     font-size: 30px;
+}
+
+
+
+.catalogcontainer{
+    padding: 16px;
+ 
+    
+}
+
+.num{
+    
+}
+
+.name{
+    
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.numbername{
+   
+    font-size: 12px;
+  
+
+}
+
+
+
+.favmin{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin-right: 5px;
+    font-size: 12px;
+
+}
+
+@media (min-width: 768px){
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 25px;
+    }
+
+   .details{
+    margin-top: 20px;
+    padding: 10px;
+}
+   .numbername{
+    font-size: 15px;
+   
+}
+.favmin{
+    width: 15%;
+    margin-right: 5px;
+    font-size: 15px;
+}
+}
+
+@media (min-width: 1024px){
+    h1{
+        font-size: 55px;
+    }
+    .div1_1{
+        margin-top: 0;
+    }
+   
+
+   .details{
+    margin-top: 23px;
+    padding: 10px;
+}
+   .numbername{
+    font-size: 18px;
+    
+}
+.favmin{
+    font-size: 18px;
+    margin-right: 5px;
+    width: 10%;
+
+}
+
+.favplay{
+    width: 25%;
+    font-size: 30px;
+}
+
 }
