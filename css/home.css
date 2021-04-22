@@ -70,10 +70,35 @@ body{
 }
 
 /*Buscador*/
-.searchbox_label{
-  color: white;
+
+.buscar-caja{
+  background-color: #262727;
+  border-radius: 40px;
+  margin: auto;
+  height: 60px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  color: #ffffff;
+  width: 65px;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ 
+ 
+ 
 /*Tres rayitas que abren el menú*/
 .checkbtn{
   font-size: 30px;
@@ -107,13 +132,11 @@ body{
 
 .div1_1{
   width: 100%;
-  margin: 100px 5px 40px 5px;
+  margin: 100px 5px 50px 5px;
   
 }
-
 .div1{
   line-height: 60px;
-  margin-bottom: 10px;
 }
 
 .list li{
@@ -139,6 +162,10 @@ h2{
 .list a{
   color: white;
   font-size: 6px; 
+}
+
+.list h4{
+  font-size: 7px;
 }
 
 #artists li{
@@ -200,7 +227,10 @@ h2{
   
 
 @media (min-width:768px){
-
+  .buscar-caja{
+    height: 40px;
+    width: 210px;
+  }
   .paginas li{
     line-height: 100px;
   }
@@ -217,9 +247,11 @@ h2{
   }
   
   .list li{
-    line-height: 12px;
+    line-height: 13px;
   }
-  
+  .list h4{
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1024px){
@@ -241,7 +273,18 @@ h2{
   background-color: black;
   padding-top: 20px;    
 }    
-    
+.buscar-caja{
+  background: none;
+  width: 15%;
+  margin-top: 20px;
+} 
+  .search-btn{
+    margin-bottom: 12px;
+  }
+  .search-txt{
+    font-size: 18px;
+    width: 70px;
+  }
   .paginas{
   width: 15%;
   right: 85%;
@@ -251,7 +294,7 @@ h2{
   line-height: 60px;
 } 
   .paginas a{
-  font-size: 18x; 
+  font-size: 18px; 
   padding: 20px 5px 5px 25px;
   display: block;
   
@@ -262,13 +305,16 @@ h2{
   }
 
   .div1_1{
-  margin-top: 50px;
+  margin-top: 35px;
   }
   .list li{
-    line-height: 12px;
+    line-height: 18px;
   }
   .list h4{
-      font-size: 10px;
+      font-size: 18px;
+  }
+  .list p{
+    font-size: 12px;
   }
 
   .footer{
@@ -287,7 +333,10 @@ h2{
     margin-top: 4px;
   }
 
-   
+  h2{
+    font-size: 30px;
+  }
+  
 }
   
   
