@@ -10,21 +10,24 @@ a:hover{
 .topcaciones:hover{
     color: white;
 }
+
 .logo{
     font-weight: lighter;
 }
+
 .div1_1{
     margin: 0;
-    
 }
+
 #divart {
-  background-image: linear-gradient( rgba(170, 68, 124, 1), rgba(48, 44, 44, 0));
-  background-size: cover;
-  text-align: center;
-  white-space: pre-line;
-  line-height: 20px;
-  border: 100px;
-  border-color: black;
+    background-image: linear-gradient( rgba(170, 68, 124, 1), rgba(48, 44, 44, 0));
+    background-size: cover;
+    text-align: center;
+    white-space: pre-line;
+    line-height: 20px;
+    border: 100px;
+    border-color: black;
+  
 }
 
 .div1_1{
@@ -32,24 +35,19 @@ a:hover{
     margin: 80px 0 40px 0;  
 }
 
- 
 
 h1{
-font-size: 45px;
-line-height: 60px; 
+    font-size: 45px;
+    line-height: 60px; 
 }
 
 .Fotoartista{
-display: block;
-margin: auto;
-width: 35%;
-border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 35%;
+    border-radius: 50%;
 
 }
-
-
-
-
 
 .favplay{
     display: flex;
@@ -58,20 +56,8 @@ border-radius: 50%;
     font-size: 30px;
 }
 
-
-
 .catalogcontainer{
-    padding: 16px;
- 
-    
-}
-
-.num{
-    
-}
-
-.name{
-    
+    padding: 16px; 
 }
 
 .details{
@@ -82,22 +68,15 @@ border-radius: 50%;
     padding: 5px;
 }
 
-.numbername{
-   
+.numbername{  
     font-size: 12px;
-  
-
 }
 
-
-
 .favmin{
-    display: flex;
     justify-content: space-between;
     width: 15%;
     margin-right: 5px;
     font-size: 12px;
-
 }
 
 @media (min-width: 768px){
@@ -109,18 +88,19 @@ border-radius: 50%;
     }
 
    .details{
-    margin-top: 20px;
-    padding: 10px;
-}
+        margin-top: 20px;
+        padding: 10px;
+    }
+
    .numbername{
-    font-size: 15px;
-   
-}
-.favmin{
-    width: 15%;
-    margin-right: 5px;
-    font-size: 15px;
-}
+        font-size: 15px;
+    }
+
+    .favmin{
+        width: 15%;
+        margin-right: 5px;
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 1024px){
@@ -133,23 +113,22 @@ border-radius: 50%;
    
 
    .details{
-    margin-top: 23px;
-    padding: 10px;
-}
+        margin-top: 23px;
+        padding: 10px;
+    }
+
    .numbername{
-    font-size: 18px;
-    
-}
-.favmin{
-    font-size: 18px;
-    margin-right: 5px;
-    width: 10%;
+        font-size: 18px;
+    }
 
-}
+    .favmin{
+        font-size: 18px;
+        margin-right: 5px;
+        width: 10%; 
+    }
 
-.favplay{
-    width: 25%;
-    font-size: 30px;
-}
-
+    .favplay{
+        width: 25%;
+        font-size: 30px;
+    }
 }

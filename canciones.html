@@ -26,35 +26,39 @@
                <h1 class="logo">Logo</h1>
     
                 <ul class="paginas">
-                  <li><label  class="searchbox_label">Buscar...</label></li>
+                    <li class="buscar-caja">
+                        <input type="text" name="" class="search-txt" placeholder="Buscar..."/>
+                        <a class="search-btn" href="resultados.html"><i class="fas fa-search"></i></a>
+                    </li>
                   <li><a class="active" href="inicio.html">Inicio</a></li>
                   <li><a href="generos.html">Géneros</a></li>
                   <li><a href="albums.html">Álbumes</a></li>
                   <li><a href="artistas.html">Artistas</a></li>
                   <li><a href="canciones.html">Canciones</a></li>
+                  <li><a href="miplaylist.html">Playlist</a></li>
                 </ul>
               </nav>  
         </header>
+
         <section class="contenido"> 
             <div class="div1_1">
                 <div class="div1" id="divart">
                     <div class="cancion">
                         <img src="img/JusticeJB.jpg" alt="Peaches" class="fotocancion">
                     </div>
-                    <div>
-                        <h4>Peaches</h4>
-                        <p>Single • Justin Bieber</p>  
-                        <p>Justice • 2021 </p>
+                    <div class="songinfo">
+                        <h4>Peaches (feat. Daniel Caesar & Giveon)</h4>
+                         <p>Song by <a href="artistas.html"> Justin Bieber </a> </p>
+                        <a href="albums.html"><p>Justice • 2021 </p> </a>
                     </div>
                     <div class="favplay">
-                    <a href="#"><i class="fas fa-play "></i> </a>
-                    <a href="#"> <i class="fas fa-heart "></i></a>
-                    
+                        <a href="miplaylist.html" class="heartho"> <i class="far fa-heart" id="heart"></i></a>
+                        <a href="#" class="playback"><i class="fas fa-play " id="play"></i> </a>
                     </div>
-                    
+                    <div class="viewplaylist">
+                       <a href="miplaylist.html"><h5>View Playlist</h5> </a>
+                    </div>
                 </div>
-
-             
             </div>                   
          </section>
 
