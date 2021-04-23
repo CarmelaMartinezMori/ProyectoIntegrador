@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Canciones</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/albumes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
-
 </head>
-
 <body>
-    <div class= "container">
+    <main class="container">
         <header class="encabezado">
             <nav class="mainnav">
                 
                 <input type="checkbox" id="check">
-
+    
                 <label for="check" class="checkbtn">
                     <i class="fas fa-bars"></i>
                 </label>
                 
                <h1 class="logo">Logo</h1>
-
+    
                 <ul class="paginas">
-                  <li class="buscar-caja">
+                    <li class="buscar-caja">
                         <input type="text" name="" class="search-txt" placeholder="Buscar..."/>
                         <a class="search-btn" href="resultados.html"><i class="fas fa-search"></i></a>
-                  </li>
+                    </li>
                   <li><a class="active" href="inicio.html">Inicio</a></li>
                   <li><a href="generos.html">Géneros</a></li>
                   <li><a href="albums.html">Álbumes</a></li>
@@ -40,25 +39,28 @@
                 </ul>
               </nav>  
         </header>
-        <main>
-            <div class= "tituosdelaspaginas"><h1 class="title">albums </h1></div>
-        </main>
-        <section class="containalbum">
-            <div class="containfotoalbum">
-                <img class="fotoalbum" src="img/JusticeJB.jpg" alt="foto artista">
-                
-                <p class="año"> </p>
-            </div>
-            <div class="containinfoalbum">
-                <h2 class="nombrealbum"></h2>
-                <br class="saltar">
-                <br class="saltar">
-               
-               <a href="artistas.html" class="iper"></a>
-                <br>
-                <a href="géneros.html" class="iper"></a>
-            </div>
-        </section>
+        <section class="contenido"> 
+            <div class="div1_1">
+                <div class="div1" id="divart">
+                    <div class="albums">
+                        <img src="img/afterhours.jpg" alt="afterhours" class="fotoalbum">
+                    </div>
+                    <div class="albuminfo">
+                        <h4> After Hours - The Weeknd </h4>
+                         <p>Album by <a href="artistas.html"> The Weeknd </a> </p>
+                        <a href="canciones.html"><p>Blinding Lights </p> </a>
+                    </div>
+                    <div class="favplay">
+                        <a href="miplaylist.html" class="heartho"> <i class="far fa-heart" id="heart"></i></a>
+                        <a href="#" class="playback"><i class="fas fa-play " id="play"></i> </a>
+                    </div>
+                    <div class="viewplaylist">
+                       <a href="miplaylist.html"><h5>View Playlist</h5> </a>
+                    </div>
+                </div>
+            </div>                   
+         </section>
+
 
         <footer class="footer">  
             <div class="div2">
