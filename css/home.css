@@ -71,33 +71,15 @@ body{
 
 /*Buscador*/
 
-.buscar-caja{
-  background-color: #262727;
-  border-radius: 40px;
-  margin: auto;
-  height: 60px;
-  width: 210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .search-txt{
   border: none;
   background: none;
   outline: none;
-  color: #ffffff;
-  width: 65px;
+  color: white;
+  width: 90px;
+  font-size: 18px;
 }
 
-.search-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
- }
- 
- 
  
 /*Tres rayitas que abren el menú*/
 .checkbtn{
@@ -114,7 +96,7 @@ body{
 }
 
 #check:checked ~ .paginas{
-  left: 0;
+  right: 0;
  }
 
 /*El main de la página*/
@@ -227,10 +209,10 @@ h2{
   
 
 @media (min-width:768px){
-  .buscar-caja{
-    height: 40px;
-    width: 210px;
+  .search-txt{
+    width: 110px;
   }
+  
   .paginas li{
     line-height: 100px;
   }
@@ -256,6 +238,9 @@ h2{
 
 @media (min-width: 1024px){
 
+  .search-txt{
+  margin-left: 20px;
+  }
   #check:checked ~ .paginas{
     display: none;
 }
@@ -273,14 +258,7 @@ h2{
   background-color: black;
   padding-top: 20px;    
 }    
-.buscar-caja{
-  background: none;
-  width: 15%;
-  margin-top: 20px;
-} 
-  .search-btn{
-    margin-bottom: 12px;
-  }
+
   .search-txt{
     font-size: 18px;
     width: 70px;
@@ -290,12 +268,12 @@ h2{
   right: 85%;
   text-align: left;
 } 
-.paginas li{
+ .paginas li{
   line-height: 60px;
 } 
   .paginas a{
   font-size: 18px; 
-  padding: 20px 5px 5px 25px;
+  padding: 15px 5px 5px 25px;
   display: block;
   
   }

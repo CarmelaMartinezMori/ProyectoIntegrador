@@ -57,27 +57,24 @@ h1{
 }
 
 .catalogcontainer{
-    padding: 16px; 
+    padding: 20px; 
 }
 
 .details{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin-top: 15px;
-    padding: 5px;
 }
 
-.numbername{  
-    font-size: 12px;
+.numbername p{  
+    display: inline;
 }
-
 .favmin{
+    display: flex;
     justify-content: space-between;
-    width: 15%;
-    margin-right: 5px;
-    font-size: 12px;
+    width: 20%;
 }
+
 
 @media (min-width: 768px){
     h1{
@@ -93,13 +90,12 @@ h1{
     }
 
    .numbername{
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .favmin{
-        width: 15%;
-        margin-right: 5px;
-        font-size: 15px;
+        width: 12%;
+        font-size: 18px;
     }
 }
 
@@ -118,12 +114,11 @@ h1{
     }
 
    .numbername{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .favmin{
-        font-size: 18px;
-        margin-right: 5px;
+        font-size: 22px;
         width: 10%; 
     }
 
