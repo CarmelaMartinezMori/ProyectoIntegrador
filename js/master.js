@@ -4,34 +4,28 @@ let listadoAlbums = document.querySelector(`#albums`);
 let queryString = new URLSearchParams (location.search)  
 let codigoAlbum = queryString.get ("id")
 
-fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigoAlbum}?key=${apiKey}` )
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigoAlbum}/albums?key=${apiKey}`)
     .then(response =>{
-        return response.json
+        return response.json()
     })
-   .then(albums =>{
-       
-       //for(let i=0; i<5;i++){
-        listadoAlbums.innerHTML += `
-        <li> 
-            <a href= "albums.html"> 
-                <img src=${albums.cover_small}>
-                <h4>${albums.title}</h4>
-                <p> Álbum • ${albums.artist}</p>
-                </a> 
-        </li>
-        <li> 
-            <a href= "albums.html"> 
-                <img src=${albums.cover_small}>
-                <h4>${albums.title}</h4>
-                <p> Álbum • ${albums.artist}</p>
-            </a> 
+    .then (infoAlbums =>{
+        console.log(infoAlbums);
+        let data = infoAlbums.data;
+        console.log(data);
+        for(let i=0;i<5;i++){
+        listadoAlbums.innerHTML +=
+        `<li>
+            <a href="albums.html">
+                <img src= ${data[i].cover_xl}>
+                <h4> ${data[i].title}</h4>
+                <p> Álbum • ${data[i].artist.name}
+                <p> ${data[i].id} </p>
+            </a>
         </li>
         `
-       //}
+        }
     })
-    .catch(error =>{
-        console.log(`Ha ocurrido el siguiente error: ${error}`);
+    .catch (error =>{
+        console.log(error);
     })
-
- 
-            
+    
