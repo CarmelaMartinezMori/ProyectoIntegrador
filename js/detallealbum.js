@@ -15,10 +15,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo
         console.log(details.data);
         albumDetails.innerHTML = `
         <div class=album> 
-            <img src= ${details.cover}>
+            <img src= ${details.cover_xl}>
         </div>
-        <article>
-            <h4> ${details.title} </h4>
+        <article class="songinfo">
+            <h4> ${details.title}</h4>
         </article>
         `
     })

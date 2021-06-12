@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+   
+}
+img{
+    width: 100%;
+}
+.header{
+    height: 10vh;
+    width: 100vw;
+}
+.paginas{
+    display: flex;
+    justify-content: space-around;
+}
+.paginas a{
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+#iniciarSesion{
+    background-color: white;
+    height: 30px;
+    width: 150px;
+    color: #1a0321;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster{
+    height: 100vh;
+    background:#1a0321 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.neon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    top: 40%;
+}
+.btn-neon{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+@keyframes downarrow {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-40%); }
+    100% { transform: translateY(0px); }
+}
+
+.scrolldown img{
+max-width: 80px;
+max-height: 50px;
+position: relative;
+animation-name:downarrow;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+.col{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 260vh;
+}
+.card{
+    width: 80vw;
+    height: 55vh;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url("../img/afterhours.jpg");
+}
+.card2{
+    background-image: url("../img/billie.jpeg");
+}
+.card3{
+    background-image: url("../img/drake.jpeg");
+}
+.card4{
+    background-image: url("../img/billie.jpeg");
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+.card h5{
+    color: white;
+    text-shadow: silver;
+}
+.card p{
+    
+}
+.div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    height: 50vh;
+}
+    
+.footer{
+    display: flex;       
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100%;
+}
+  
+  .redes{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0;
+    width: 80%; 
+  }  
+  
+  .redes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #262727;
+    margin: 5px;
+  }
+  
+  .redes i{
+    color: #ffffff;  
+  }
+  
+  .creadores{
+    width: 70%;
+  }
+@media (min-width:768px){
+    .paginas li{
+        font-size: 20px;
+    }
+    #iniciarSesion{
+        height: 40px;
+        width: 185px;
+    }
+    .btn-neon{
+        font-size: 50px;
+        text-shadow: #a945c7 -2px -2px 5px;
+    }
+    .card{
+        width: 80vw;
+        height: 60vh;
+    }
+    .card h5{
+        font-size: 35px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1024px){
+    .paginas li{
+        font-size: 25px;
+    }
+    #iniciarSesion{
+        height: 50px;
+        width: 245px;
+    }
+    .btn-neon{
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: #fff;
+        letter-spacing: 4px;
+        font-size: 60px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .btn-neon:hover{
+        background-color: #a945c7;
+        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+        color: white;
+        text-decoration: none;
+    }
+    .col{
+        height: 150vh;
+    }
+    .card{
+        margin:0;
+        width: 40vw;
+        height: 60vh;
+    }
+}

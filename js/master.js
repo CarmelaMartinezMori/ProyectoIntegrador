@@ -15,11 +15,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo
         for(let i=0;i<5;i++){
         listadoAlbums.innerHTML +=
         `<li>
-            <a href="albums.html">
+            <a href="albums.html?id=${data[i].id}">
                 <img src= ${data[i].cover_xl}>
                 <h4> ${data[i].title}</h4>
-                <p> Álbum • ${data[i].artist.name}
-                <p> ${data[i].id} </p>
+                <p> Álbum • ${data[i].artist.name} </p>
             </a>
         </li>
         `
