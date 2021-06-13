@@ -17,24 +17,43 @@ body{
     align-items: center;
     justify-content: center;
 }
+.arrow{
+    display: inline-block;
+    width: 80%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 .iniciarSesion{
     width: 80%;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 15px 25px;
     border-radius: 10px;
-    line-height: 30px;
+    line-height: 35px;
     margin-top: 40px;
 }
+
+article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 button{
-    width: 80px;
-    background-color: #02d287;
+    width: 140px;
+    height: 35px;
+    background-color: #0bc85a;
     border: none;
-    border-radius: 15px;
+    border-radius: 17px;
     padding: 4px 2px;
+    font-size: 15px;
+    margin-top:5px;
+    color: white;
+    letter-spacing: 2px;
+    float: right;
 }
 
 .registro{
@@ -43,10 +62,43 @@ button{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 15px 25px;
-    line-height: 30px;
+    line-height: 35px;
 }
 input{
-    width: 100%;
+    width: 75vw;
+    height: 30px;
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+    .registro, .iniciarSesion{
+    width: 60%;
+    }
+    input{
+        width: 50vw;
+        height: 35;
+        font-size: 15px;
+    }
+    button{
+        width: 160px;
+        font-size: 17px;
+    }
+}
+@media (min-width: 1024px){
+
+    .container{
+        width: 50%;
+    }
+    input{
+        width: 30vw ;
+    }
+    buttonñ
+
+    
 }

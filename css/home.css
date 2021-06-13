@@ -4,37 +4,32 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-}
- 
-.redes, .creadores, .list, .paginas{
-  list-style-type: none;
+    list-style-type: none;
 }
 img{
     width: 100%;
 }
-
 body{
   font-family: 'Montserrat', sans-serif;
 }
-
 .container{
   display: flex;
   flex-wrap: wrap;
 }
 
 /*Header*/
-
+.top{
+  display: none;
+}
 .encabezado{
   position: fixed;
   width: 100%;
 }
-
 .mainnav{
   background: #000000;
   height: 80px;
   width: 100%;
 }
-
 .paginas{
   position: fixed;
   width: 100%;
@@ -44,42 +39,40 @@ body{
   right: 120%;
   text-align: center;
 }
-
 .paginas li{
   line-height: 90px;
 }
-
 .paginas a{
   color: white;
   font-size: 17px;
   padding: 7px 13px;
   text-transform: uppercase;
 }
-
 .paginas a:hover{
   color: #02d287;
 }
-
+.paginas li i{
+  display: none;
+}
 .logo{
   color: white;
   font-size: 30px;
   line-height: 80px;
   padding-left: 30px;
   font-weight: bold;
+  letter-spacing: 4px;
 }
-
+.forward, .back{
+  display: none;
+}
 /*Buscador*/
-
-.search-txt{
-  border: none;
-  background: none;
-  outline: none;
-  color: white;
-  width: 90px;
-  font-size: 18px;
+.searchBar1{
+  border-style: none;
+  border-radius: 15px;
+  height: 25px;
+  text-align: center;
 }
 
- 
 /*Tres rayitas que abren el menú*/
 .checkbtn{
   font-size: 30px;
@@ -107,52 +100,40 @@ body{
   background-color: #262727;
   color: white;
   line-height: 20px;
-
 }  
-
 .div1_1{
   width: 100%;
   margin: 100px 5px 50px 5px;
-  
 }
 .div1{
   line-height: 60px;
 }
-
 .list li{
   line-height: 10px;
 }
-
 h2{
   margin-left: 10px;
 }
-
 .list{
   display: flex;
   justify-content: space-around; 
 }
-
 .list li{
   width: 19%;
-  
 }
-
 .list a{
   color: white;
-  font-size: 6px; 
+  font-size: 7px; 
 }
-
 .list h4{
-  font-size: 7px;
+  font-size: 8px;
 }
-
 #artists li{
   width: 16%;
 }
 #artists img{
   border-radius: 50%;
 }
-
 #artists h4{
   text-align: center;
 }
@@ -167,7 +148,6 @@ h2{
   width: 100%;
   height: 50vh;
 }
-  
 .footer{
   display: flex;       
   justify-content: space-around;
@@ -176,14 +156,12 @@ h2{
   color: white;
   width: 100%;
 }
-
 .redes{
   display: flex;
   justify-content: space-around;
   margin: 20px 0 0;
   width: 80%; 
 }  
-
 .redes a{
   display: flex;
   justify-content: center;
@@ -194,92 +172,140 @@ h2{
   background-color: #262727;
   margin: 5px;
 }
-
 .redes i{
   color: #ffffff;  
 }
-
 .creadores{
   width: 70%;
 }
   
-
+/*Media Queries*/
 @media (min-width:768px){
-  .search-txt{
-    width: 110px;
+  .searchBar1{
+    font-size: 18px;
   }
-  
   .paginas li{
     line-height: 100px;
   }
   .paginas a{
     font-size: 22px;
-
   }
   .list p, .list a{
-    font-size: 9px; 
-   }
-   .div1{
+    font-size: 10px; 
+    height: 20px;
+  }
+  .div1{
     line-height: 70px;
     margin-bottom: 10px;
   }
-  
   .list li{
     line-height: 13px;
   }
   .list h4{
-    font-size: 13px;
+    font-size: 14px;
+  }
+  .redes a{
+    height: 50px;
+    width: 50px;
+  }
+  .redes i{
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1024px){
-
+  .forward, .back{
+    display: block;
+    cursor: pointer;
+  }
+  /*Buscador*/
+ .searchBar{
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    height: 25px;
+    width: 200px;
+ }
   .search-txt{
-  margin-left: 20px;
+    margin-left: 20px;
   }
   #check:checked ~ .paginas{
     display: none;
-}
-  
+ }
   .checkbtn{
     display: none;
-}
-
+ }
   .mainnav{
-  height: 100vh;
-  width: 15%;    
-  position: fixed;    
-  top: 0;    
-  left: 0;    
-  background-color: black;
-  padding-top: 20px;    
-}    
-
-  .search-txt{
-    font-size: 18px;
-    width: 70px;
-  }
+    height: 110vh;
+    width: 16vw;    
+    position: fixed;    
+    top: -17px;    
+    left: 0;    
+    background-color: black;
+    padding-top: 20px;    
+ }    
   .paginas{
-  width: 15%;
-  right: 85%;
-  text-align: left;
-} 
- .paginas li{
-  line-height: 60px;
-} 
+    width: 15%;
+    right: 85%;
+    text-align: left;
+    margin-top: 10px;
+ } 
+  .paginas li{
+    line-height: 60px;
+ } 
   .paginas a{
-  font-size: 18px; 
-  padding: 15px 5px 5px 25px;
-  display: block;
-  
+    font-size: 16px; 
+    display: block;
+    text-transform: capitalize;
+    line-height: 25px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;  
   }
- 
+  .paginas li i{
+    display: inline;
+  }
   .contenido{
-  margin-left: 15%;
+    margin-left: 16%;
   }
-
+  .form1{
+    display: none;
+  }
+  .form2{
+    background: #ffffff;
+    width: 300px;
+    border-radius: 15px;
+    padding: 5px;
+    
+    color: black;
+  }
+  .searchBar{
+    color: #262727;
+    width: 250px;
+  }
+  #lupa {
+    color: black;
+  }
+  .top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.096);
+    height: 20px;
+    padding: auto;
+    height: 50px;
+    position: fixed;
+    width: 85%;
+   
+  }
+  #albumDiv{
+    margin-top: 40px;
+  }
   .div1_1{
-  margin-top: 35px;
+    margin-top: 0px;
+    position: relative;
   }
   .list li{
     line-height: 18px;
@@ -292,25 +318,20 @@ h2{
   }
 
   .footer{
-  font-size: larger;
-  margin-left: 15%;
+    font-size: larger;
+    margin-left: 15%;
   }
-
   .redes a{  
-  width: 70px;
-  height: 70px;   
-
+    width: 70px;
+    height: 70px;   
   }
-
   #artists h4{
     font-size: 17px;
     margin-top: 4px;
   }
-
   h2{
     font-size: 30px;
   }
-  
 }
   
   

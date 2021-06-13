@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/resultados.css">
-
 </head>
 <body>
     <main class="container">
@@ -23,187 +23,59 @@
                     <i class="fas fa-bars"></i>
                 </label>
                 
-               <h1 class="logo">Logo</h1>
+                <h1 class="logo">MUSIFY</h1>
 
                 <ul class="paginas">
-                    <li class="buscar-caja">
-                        <form action="resultados.html">
-                            <input type="text"  class="search-txt" placeholder="Buscar..."/>
-                        </form>
-                    </li>
-                  <li><a class="active" href="inicio.html">Inicio</a></li>
-                  <li><a href="generos.html">Géneros</a></li>
-                  <li><a href="albums.html">Álbumes</a></li>
-                  <li><a href="artistas.html">Artistas</a></li>
-                  <li><a href="canciones.html">Canciones</a></li>
-                  <li><a href="miplaylist.html">Playlist</a></li>
+                    <li><form action="" class="form1">
+                        <input type="text" name="searchBar" class="searchBar"
+                        placeholder="Buscar"/>
+                    </form></li>
+                    <li><a  href="inicio.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                    <li><a href="generos.html"><i class="bi bi-headphones"></i> Géneros</a></li>
+                    <li><a href="albums.html"><i class="bi bi-vinyl-fill"></i> Álbumes</a></li>
+                    <li><a href="artistas.html"><i class="bi bi-person-fill"></i> Artistas</a></li>
+                    <li><a href="canciones.html"><i class="bi bi-caret-right-fill"></i> Canciones</a></li>
+                    <li><a href="miplaylist.html"><i class="bi bi-stack"></i> Playlist</a></li>
                 </ul>
-
-              </nav>  
+            </nav>  
         </header>
 
         <section class="contenido"> 
+            <div class="div-spinner"></div>
             <div class="div1_1">
-               
-                 
-              
-               <div class="card">
-                    <a href="#" class="details">
-                        <div class="card-image">
-                            <img src="img/major_lazer_cold_water-portada.jpeg" alt="Cold Water">
-                        </div> 
-                        <div class="card-data">
-                            <h4>Cold Water</h4>
-                            <p>Major lazer FT Justin Biber</p>
-
-                        </div>
-                    </a>
-
+                <div class="top">
+                    <span class="back"><i onclick="goBack()" class="fas fa-chevron-left"></i></span>
+                    <form action="resultados.html" class="form2">
+                        <i class="bi bi-search" id="lupa"></i>
+                        <input type="text" name="searchBar" class="searchBar"
+                        placeholder="Buscar"/>
+                    </form>
+                    <span class="forward"><i onclick="goForward()" class="fas fa-chevron-right"></i></span>
                 </div>
-                <div class="card">
-                    <a href="#" class="details">
-                        <div class="card-image">
-                            <img src="img/Shake it off.jpeg" alt="Shake it off">
-                        </div>
-                    
-                        <div class="card-data">
-                            <h4>Shake it off</h4>
-                            <p>Taylor Swift</p>
-    
-                        </div>
-                    </a>
-                
+                <div class="div1" id="albumDiv">
+                    <h2>Álbumes</h2>
+
+                    <ul class="list" id="albums">
+                        
+                    </ul>   
                 </div>
-                <div class="card">
-                    <a href="#" class="details">
-                        <div class="card-image">
-                            <img src="img/peaches.png" alt="Peaches">
-                        </div>
-                    
-                        <div class="card-data">
-                            <h4>Peaches</h4>
-                            <p>Justin Biber</p>
-    
-                        </div>
-                    </a>
-                
-                </div>
+                <div class="div1"> 
+                    <h2>Canciones</h2>
+                    <ul class="list" id="tracks">
 
-                <div class="card">
-                    <a href="#" class="details">
-                        <div class="card-image">
-                            <img  src="img/7rings.jpeg" alt="7 Rings">
-                        </div> 
-                        <div class="card-data">
-                            <h4>7 rings</h4>
-                            <p>Ariana Grande</p>
-
-                        </div>
-                    </a>
-
+                    </ul>
                 </div>
         
-                <div class="card">
-                    <a href="#" class="details">
-                        <div class="card-image">
-                            <img  src="5 Seconds of Summer.webp" alt="She Looks so perfect">
-                        </div> 
-                        <div class="card-data">
-                            <h4>She looks so perfect</h4>
-                            <p>5 seconds of summer</p>
-
-                        </div>
-                    </a>
-
-                </div>
+                <div class="div1">
+                    <h2>Artistas</h2>
+                    <ul class="list" id="artists">
 
 
-                <div class="card">
-                    <a href="#" class="details">
-                        <div class="card-image">
-                            <img  src="img/futurenostalgia.jpg" alt="Levitating">
-                        </div> 
-                        <div class="card-data">
-                            <h4>Levitating</h4>
-                            <p>Dua Lipa</p>
-                        </div>
-                    </a>
+                    </ul>
                 </div>
-        
-                <div class="card">
-                    <a href="#" class="details">
-                        <div class="card-image">
-                            <img  src="img/blinding-lights.jpeg" alt="Blinding Lights">
-                        </div> 
-                        <div class="card-data">
-                            <h4>Blinding Lights</h4>
-                            <p>The weekend</p>
-                        </div>
-                    </a>
-                </div>
-                     
-            <div class="card">
-                <a href="#" class="details">
-                    <div class="card-image">
-                        <img  src="img/thestrokes.jpeg" alt="Selfless">
-                    </div> 
-                    <div class="card-data">
-                        <h4>Selfless</h4>
-                        <p>The strokes</p>
-                    </div>
-                </a>
-            </div>
-          
-        <div class="card">
-            <a href="#" class="details">
-                <div class="card-image">
-                    <img  src="img/The Chainsmokers.jpeg" alt="Something Just Like This">
-                </div> 
-                <div class="card-data">
-                    <h4>Something Just Like This</h4>
-                    <p>The Chainsmokers,Coldplay</p>
-                </div>
-            </a>
-        </div>
                 
-    <div class="card">
-        <a href="#" class="details">
-            <div class="card-image">
-                <img  src="img/Buzzcut season.jpeg" alt="Buzzcut season">
-            </div> 
-            <div class="card-data">
-                <h4>Buzzcut season</h4>
-                <p>Lorde</p>
-            </div>
-        </a>
-   
-    </div>
-    <div class="card">
-     <a href="#" class="details">
-    <div class="card-image">
-        <img  src="img/Bruno Mars.jpeg" alt="Just the way you are">
-      </div> 
-    <div class="card-data">
-        <h4>Just the way you are</h4>
-        <p>Bruno Mars</p>
-    </div>
-</a>
-</div>
-<div class="card">
-    <a href="#" class="details">
-   <div class="card-image">
-       <img  src="img/señorita.jpeg" alt="Señorita">
-     </div> 
-   <div class="card-data">
-       <h4>Señorita</h4>
-       <p>Shawn Mendes</p>
-   </div>
-</a>
-</div>
-         
-         
-         </section>
-
+            </div>                   
+        </section>
 
         <footer class="footer">  
             <div class="div2">
@@ -223,12 +95,8 @@
                 </ul>
                 <p>2021</p>
             </div>
-            
         </footer>
-
-
-
     </main>
-    
+    <script src="js/resultados.js"></script>
 </body>
 </html>

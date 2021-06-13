@@ -28,7 +28,7 @@ img{
     background-color: white;
     height: 30px;
     width: 150px;
-    color: #1a0321;
+    color: #262727;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ img{
 
 .poster{
     height: 100vh;
-    background:#1a0321 ;
+    background:#000000 ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,7 +166,7 @@ animation-iteration-count: infinite;
     }
     .btn-neon{
         font-size: 50px;
-        text-shadow: #a945c7 -2px -2px 5px;
+        text-shadow: #2bb300 -2px -2px 5px;
     }
     .card{
         width: 80vw;
@@ -199,8 +199,8 @@ animation-iteration-count: infinite;
         transition: 0.2s;
     }
     .btn-neon:hover{
-        background-color: #a945c7;
-        box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+        background-color: #2bb300;
+        box-shadow: 0 0 10px #2bb300, 0 0 40px #2bb300, 0 0 80px #2bb300;
         color: white;
         text-decoration: none;
     }

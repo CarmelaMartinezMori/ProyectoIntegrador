@@ -19,7 +19,19 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo
         </div>
         <article class="songinfo">
             <h4> ${details.title}</h4>
+            <p> Álbum by <a href="artistas.html?id=${details.artist.id}"> ${details.artist.name}</a></p>
         </article>
+        <div class="favplay">
+            <a href="#" class="heartho">
+                <i class="bi bi-heart" id="heart"></i>
+            </a>
+            <a href="#" class="playback">
+            <i class="bi bi-play-fill" id="play"></i>
+            </a>
+        </div>
+        <div class="viewplaylist">
+           <a href="#"> <h5> View Playlist </h5> </a>
+        </div>
         `
     })
     .catch(error => {
