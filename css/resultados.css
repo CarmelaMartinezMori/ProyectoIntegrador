@@ -1,0 +1,23 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.resultados{
+    display: none;
+}
+
+
+@media (min-width: 1024px){
+    #margen{
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+        text-align: center;
+        font-size: 23px;
+    }
+    .div1{
+        line-height: 80px;
+    }
+}
+
+

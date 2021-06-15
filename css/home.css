@@ -1,13 +1,13 @@
 /*Página Entera*/
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
 }
 img{
-    width: 100%;
+  width: 100%;
 }
 body{
   font-family: 'Montserrat', sans-serif;
@@ -333,9 +333,3 @@ h2{
     font-size: 30px;
   }
 }
-  
-  
-
-  
-  
-  
