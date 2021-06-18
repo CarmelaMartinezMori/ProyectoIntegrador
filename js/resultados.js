@@ -23,8 +23,7 @@ window.addEventListener(`load`, function(){
     error.innerHTML += `<h4 id="margen"> Por favor ingrese más caractéres para realizar la búsqueda </h4>`;
     resultados.classList.add ("resultados");
   } else {
-    error.innerHTML+= `<h4> Término buscado: ${buscar} </h4>`;
-    error.style.margin="50px 0 0 0";
+    error.innerHTML+= `<h4 id="terminoBuscado"> Término buscado: ${buscar} </h4>`;
   }
 
   let error2 = document.getElementsByClassName("error2")
@@ -37,10 +36,10 @@ window.addEventListener(`load`, function(){
       let resultados = infoAlbum.data;
         if (resultados == null){
           error2.innerHTML += `<h3> No se encontraron resultados en Álbumes </h3>`;
-        } else{for (let i=0; i<resultados.length; i++){
-          albums.innerHTML+= `<li>
+        } else{for (let i=0; i<5; i++){
+          albums.innerHTML+= `
+        <li> 
             <a href="albums.html?id=${resultados[i].id}">
-              
                 <img src= ${resultados[i].cover_xl} alt="Album Cover Not Available">
                 <h4> ${resultados[i].title}</h4>
                 <p> Álbum • ${resultados[i].artist.name} </p>
@@ -93,6 +92,7 @@ window.addEventListener(`load`, function(){
             <a href="canciones.html?id=${resultadosTracks[i].id}">
               <img src= ${resultadosTracks[i].album.cover_xl}>
               <h4> ${resultadosTracks[i].title}</h4>
+              <p> Canción • ${resultadosTracks[i].artist.name} </p>
           </a>
       </li>`}
     }

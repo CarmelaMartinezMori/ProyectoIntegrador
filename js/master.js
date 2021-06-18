@@ -51,7 +51,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo
             <a href="canciones.html?id=${data[i].id}">
                 <img src= ${data[i].album.cover_xl}>
                 <h4> ${data[i].title}</h4>
-                <p> Álbum • ${data[i].artist.name} </p>
+                <p> Canción • ${data[i].artist.name} </p>
             </a>
         </li>
         `
