@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Playlist</title>
+    <title>Artistas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/artistas.css">
-    <link rel="stylesheet" href="css/miplaylist.css">
-    <ul class="paginas">
-        <li><form action="" class="form1">
-            <input type="text" name="searchBar" class="searchBar"
-            placeholder="Buscar"/>
-        </form></li>
-        <li><a  href="inicio.html"><i class="bi bi-house-door"></i> Inicio</a></li>
-        <li><a href="generos.html"><i class="bi bi-headphones"></i> Géneros</a></li>
-        <li><a href="albums.html"><i class="bi bi-vinyl-fill"></i> Álbumes</a></li>
-        <li><a href="artistas.html"><i class="bi bi-person-fill"></i> Artistas</a></li>
-        <li><a href="canciones.html"><i class="bi bi-caret-right-fill"></i> Canciones</a></li>
-        <li><a href="miplaylist.html"><i class="bi bi-stack"></i> Playlist</a></li>
-    </ul>
+    <script src="/js/playlist.js"></script>
 
 </head>
 <body>
@@ -44,131 +36,99 @@
                         <input type="text" name="searchBar" class="searchBar"
                         placeholder="Buscar"/>
                     </form></li>
-                    <li><a  href="inicio.html">Inicio</a></li>
-                    <li><a href="generos.html">Géneros</a></li>
-                    <li><a href="albums.html">Álbumes</a></li>
-                    <li><a href="artistas.html">Artistas</a></li>
-                    <li><a href="canciones.html">Canciones</a></li>
-                    <li><a href="miplaylist.html">Playlist</a></li>
+                    <li><a  href="inicio.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                    <li><a href="generos.html"><i class="bi bi-headphones"></i> Géneros</a></li>
+                    <li><a href="albums.html"><i class="bi bi-vinyl-fill"></i> Álbumes</a></li>
+                    <li><a href="artistas.html"><i class="bi bi-person-fill"></i> Artistas</a></li>
+                    <li><a href="canciones.html"><i class="bi bi-caret-right-fill"></i> Canciones</a></li>
+                    <li><a href="miplaylist.html"><i class="bi bi-stack"></i> Playlist</a></li>
                 </ul>
             </nav>  
         </header>
-
         <section class="contenido"> 
             <div class="div1_1">
                 <div class="div1" id="divart">
-                    <div class="fotoplaylist">
-                        <img src="img/popeningles.png" alt="Peaches" class="playlistimg">
+                    <div class="artista">
+                        <img src="img/macc.jpeg" alt="MacMiller" class="Fotoartista" >
+                        <h1>Mi playlist</h1>   
                     </div>
-                    
                     <div class="favplay">
-                    <a href="#"><i class="fas fa-play "></i> </a>
-                </div>    
+                        <a href="#"><i class="fas fa-play "></i> </a>
+                        <a href="miplaylist.html"> <i class="fas fa-heart "></i></a>
                     </div>
-                    <div class="catalogcontainer"> 
-                        <div>
-                           <a href="#" class="topcaciones"><h3> Top canciones</h3> </a>
-                        </div>
-                        <div class="songs">
-                           <div class="songname">
-                            <div>
-                                <a href="#" class="details">
-                                    <div>
-                                        <img src="img/JusticeJB.jpg" alt="Peaches">
-                                        <div>
-                                            <h4 class="JB"> Peaches
-                                                Justin Bieber (ft.Giveon)</h4>
-                                           
-                                    
-                                        </div>
-                                           
-                                       
-                                        
-                                    </div> 
-                                </a>
+                </div>
 
-                            </div>
-                            <div>
-                                <a href="#" class="details">
-                                    <div>
-                                        <img src="img/major_lazer_cold_water-portada.jpeg" alt="Cold Water">
-                                        <div>
-                                            <h4 class="cw">Cold Water 
-                                                Major Lazer, Justin Biber, Mo
-                                            </h4>
-                                        </div>
-                                    </div> 
-                                </a>
-
-                            </div>
-                               <div>
-                                   <a href="#" class="details">
-                                       <div><img src="img/dualipa.webp" alt="Levitating">
-                                        <div>
-                                            <h4 class="Dua">Levitating
-                                                            Dua lipa
-
-                                            </h4>
-                                        </div>
-
-                                       </div>
-                                       
-                                   </a>
-
-                               </div>
-                               <div>
-                                
-                                <div>
-                                        <a href="#" class="details">
-                                            <div><img src="img/señorita.jpeg" alt="Señorita">
-                                             <div>
-                                                 <div>
-                                                     <h4>Señorita
-                                                         Shawn Mendes
-                                                     </h4>
-                                                     </div>
-                                    <div>
-                                        <a href="#" class="details">
-                                            <div><img src="img/drake.jpeg" alt="One Dance">
-                                             <div>
-                                                 <div>
-                                                     <h4>One Dance
-                                                         Drake
-                                                     </h4>
-                                                            </div>
-                                                            <div>
-                                                                <a href="#" class="details">
-                                                                    <div><img src="img/tyler_the_creator_9102.jpeg" alt="Potato Salad">
-                                                                     <div>
-                                                                         <div>
-                                                                             <h4>Potato Salad
-                                                                                Tyler, The Creator
-                                                                             </h4>
-                                                                                    </div>
-                                    <div>
-                                        <a href="#" class="details">
-                                            <div><img src="img/macc.jpeg" alt="The Spins">
-                                            <div>
-                                                <h4>The Spins
-                                                    Mac Miller
-                                                </h4>
-                                            </div>
-
-                                    </div>
-                                    
-                                </a>
-
-                            </div>
-                           </div>   
-                        </div>
-                       
+                 <div class="catalogcontainer"> 
+                    <div>
+                        <a href="#" class="topcaciones"><h3>Mis Canciones</h3> </a>
                     </div>
-               
-                    
-                
-                
+                    <div class="songs">
+                        <div class="songname">
+                            <div class="details">
+                                <div class="numbername">
+                                    <a href="#">
+                                        <p class="num">1</p>
+                                        <p class="name">The Spins</p>
+                                    </a>
+                                </div>
+                                <div class="favmin">
+                                    <a href="miplaylist.html"><i class="fas fa-heart"></i></a>
+                                    <p>3 : 15</p>
+                                 </div>
+                            </div>
+                            <div class="details">
+                                <div class="numbername">
+                                    <a href="#">
+                                        <p class="num">2</p>
+                                        <p class="name">Self Care</p>
+                                    </a>
+                                </div>
+                                <div class="favmin">
+                                    <a href="miplaylist.html"><i class="fas fa-heart"></i></a>
+                                    <p>5 : 45</p>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="numbername">
+                                    <a href="#">
+                                        <p class="num">3</p>
+                                        <p class="name">Good News</p>
+                                    </a>
+                                </div>
+                                <div class="favmin">
+                                    <a href="miplaylist.html"><i class="fas fa-heart"></i></a>
+                                    <p>5 : 42</p>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="numbername">
+                                    <a href="#">
+                                        <p class="num">4</p>
+                                        <p class="name">Weekend (ft. Miguel)</p>
+                                    </a>
+                                </div>
+                                <div class="favmin">
+                                    <a href="miplaylist.html"><i class="fas fa-heart"></i></a>
+                                    <p>3 : 28</p>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="numbername">
+                                    <a href="#">
+                                        <p class="num">5</p>
+                                        <p class="name">Blue World</p>
+                                    </a>
+                                </div>
+                                <div class="favmin">
+                                    <a href="miplaylist.html"><i class="fas fa-heart"></i></a>
+                                    <p>3 : 29</p>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                </div>
             </div>                   
-         </section>
+        </section>
 
         <footer class="footer">  
             <div class="div2">
@@ -176,9 +136,9 @@
                      <li> <a href="mailto:cmartinezmori@udesa.edu.ar"><i class="fas fa-envelope" ></i></a></li> 
                 
                     <li> <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram "></i></a></li>
-
+    
                     <li><a href="tel:153445035"><i class="fas fa-phone-alt"></i></a></li>
-
+    
                     <li> <a href="https://www.twitter.com"target=_blank><i class="fab fa-twitter"></i></a></li>
                 </ul>
                 <ul class="creadores"> Creadores
@@ -187,13 +147,8 @@
                     <li>Delfina Boglione</li>
                 </ul>
                 <p>2021</p>
-            </div>
-            
+            </div>  
         </footer>
-
-
-
     </main>
-    
 </body>
 </html>
