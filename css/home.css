@@ -212,7 +212,6 @@ h2{
     font-size: 20px;
   }
 }
-
 @media (min-width: 1024px){
   .forward, .back{
     display: block;
@@ -277,7 +276,6 @@ h2{
     width: 300px;
     border-radius: 15px;
     padding: 5px;
-    
     color: black;
   }
   .searchBar{
@@ -295,14 +293,12 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     background-color: rgba(15, 15, 15, 0.096);
     height: 20px;
     padding: auto;
     height: 50px;
     position: fixed;
     width: 85%;
-   
   }
   #albumDiv{
     margin-top: 40px;

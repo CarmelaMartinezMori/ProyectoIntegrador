@@ -8,13 +8,23 @@ function goForward() {
 
 window.addEventListener(`load`, function(){
   //Agregar spinner
+  
+  //spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+
+  
+  setTimeout(function () {
+    let spinnerWrapper = document.querySelector('.spinner-wrapper');
+  spinnerWrapper.style.visibility = 'hidden';
+   }, 1500);
+
+
 
   let apiKey = `6ee4ba95329b7c4561d268ce9d34aca3`;
 
   let queryString = new URLSearchParams (location.search)  
   let buscar = queryString.get ("searchBar");
 
-  let error = document.querySelector(".error");
+  let error = document.querySelector("#error");
 
   if (buscar === ""){
     error.innerHTML += `<h4 id="margen"> Ingrese su búsqueda </h4>`;
@@ -30,7 +40,7 @@ window.addEventListener(`load`, function(){
   let albums = document.getElementById("albums");
   fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${buscar}&key=${apiKey}`)
     .then (response =>{
-    return response.json();
+      return response.json();
     })
     .then(infoAlbum=>{
       let resultados = infoAlbum.data;
@@ -38,13 +48,13 @@ window.addEventListener(`load`, function(){
           error2.innerHTML += `<h3> No se encontraron resultados en Álbumes </h3>`;
         } else{for (let i=0; i<5; i++){
           albums.innerHTML+= `
-        <li> 
+          <li> 
             <a href="albums.html?id=${resultados[i].id}">
                 <img src= ${resultados[i].cover_xl} alt="Album Cover Not Available">
                 <h4> ${resultados[i].title}</h4>
                 <p> Álbum • ${resultados[i].artist.name} </p>
             </a>
-        </li>`
+          </li>`
         }
       }
     })
@@ -101,4 +111,5 @@ window.addEventListener(`load`, function(){
   .catch (error =>{
     console.log(error);
   })
+  
 })
