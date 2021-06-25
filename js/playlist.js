@@ -1,36 +1,44 @@
-let recuperoStorage = localStorage.getItem(`playlist`);
-let playlist = JSON.parse(recuperoStorage); //pasarlo a JSON para manipularlo
-let listaCanciones = document.querySelector(``.playlist);
-console.log(playlist);
+window.addEventListener("load", function () {
+    let cancionesStorage = localStorage.getItem("playlist");
+    let playlist = JSON.parse(cancionesStorage); //pasarlo a JSON para manipularlo
+    let listaCanciones = document.querySelector(`.songname`);
+    console.log(playlist);
 
-if(recuperoStorage == null || recuperoStorage == "[]"){
-playlist = [];
-listasCanciones.inner.HTML +=  `<h1 class="noHay>`
-console.log(listaCanciones);
-}
-else{
-    listaCanciones.innerHTML += `<h1 class="noHay>`
-    for(let i = 0;i <playlist.length;i++){
-          fetch(`https://cors-anywhere.herokuapp.com//https://apideezer.com/track/${playlist[i]}` )
-          .then(function(response){
-              return response.json();
-          })
-          .then(function(data){
-              console.log(data);
-              listaCanciones.innerHTML += `<a href="detalleCancion.html?id=`+data.id"><li><i class="fas fa-heart"
-              <button class="boton">Eliminar de la playlist</button>`
+    if (!playlist) {
+        playlist = [];
+        listaCanciones.innerHTML += ` <h2 class ="nohay">No Hay Canciones</h2> `
+
+        console.log(listaCanciones);
+    } else {
+        for (let i = 0; i < playlist.length; i++) {
+            const cancion = playlist[i]
+            let durationMin = Math.floor(cancion.duration / 60);
+            let durationSec = cancion.duration - durationMin * 60;
+            // console.log(durationSec);
+            if (durationSec < 10) {
+                durationSec = '0' + durationSec;
+            }
+            listaCanciones.innerHTML += `     <div class="details">
+        <div class="numbername">
+            <a href="canciones.html?id=${cancion.id}">
+                <p class="num">${i+1}</p>
+                <p class="name">${cancion.title}</p>
+            </a>
+        </div>
+        <div class="favmin">
+           
+            <p>${durationMin}:${durationSec}</p>
+         </div>
+    </div>`
+        };
 
 
-              let eliminar = document.querySelector(`.boton`);
-              eliminar.addEventListener(`click`,function(){
 
-              })
-          })
-        }
+
+        let clear = document.querySelector(`.clear`)
+        clear.addEventListener(`click`, () => {
+            window.localStorage.clear();
+        })
+       
     }
-    let clear = document.querySelector (`.clear`)
-    clear.addEventListener(`click`,() => {
-        window.ocalStorage.clear(``);
-    })
-          
-    
+})

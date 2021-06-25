@@ -23,7 +23,7 @@ window.addEventListener("load", function(){
         console.log(data)
         nombreDelGenero.innerHTML += `Artistas de ${data.name}`;
     })
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/arists`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`)
     .then(response =>{
         return response.json();
         
