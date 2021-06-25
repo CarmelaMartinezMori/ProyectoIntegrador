@@ -1,14 +1,58 @@
-*{  
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
+.spinner-wrapper{
+    width: 100%;
+    height: 60%;
+    margin-top: 80px;
+    background-color: #262727;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.spinner {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #ff00cc 0%,#333399 100% );
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 90%;
+    height: 90%;
+    background-color: #262727;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+} 
 .form1 input{
     border: none;
     height: 25px;
     border-radius: 15px;
     text-align: center;
 }
+
 #margen{
     height: 40vh;
     width: 100vw;
@@ -18,7 +62,16 @@
 .resultados{
     display: none;
 }
+#terminoBuscado{
+    text-align: center;
+}
 @media (min-width: 768px){
+    .spinner-wrapper{
+        height: ;
+    }
+    #terminoBuscado{
+        font-size: 22px;
+    }
     .form1 input{
         height: 30px;
         width: 200px;
@@ -35,13 +88,17 @@
     }
 }
 @media (min-width: 1024px){
-    
+    .spinner-wrapper{
+        height: 100%;
+        margin-top: 45px;
+    }
     #margen{
         width: 100%;
         margin-top: 200px;
     }
     #terminoBuscado{
-        margin-top: 50px;
+        margin-top: 55px;
+        font-size: 22px;
     }
     
 }
