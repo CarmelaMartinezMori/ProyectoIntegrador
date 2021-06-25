@@ -5,14 +5,16 @@ function goBack() {
 function goForward() {
     window.history.forward();
 };
+window.addEventListener (`load`, function(){
+    //Declaro una variable para guardar la Api Key
+    let apiKey = `6ee4ba95329b7c4561d268ce9d34aca3`;
+    //Capturo el elemento del DOM sobre el cual voy a hacer modificaciones
+    let listadoAlbums = document.querySelector(`#albums`);
+    //Obtengo los datos de la query string con el objeto location y parámetro .search. Luego con el método get () obtengo el valor de id.
+    let queryString = new URLSearchParams (location.search)  
+    let codigo = queryString.get ("id")
 
-let apiKey = `6ee4ba95329b7c4561d268ce9d34aca3`;
-let listadoAlbums = document.querySelector(`#albums`);
-
-let queryString = new URLSearchParams (location.search)  
-let codigo = queryString.get ("id")
-
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo}/albums?key=${apiKey}`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo}/albums?key=${apiKey}`)
     .then(response =>{
         return response.json()
     })
@@ -36,8 +38,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo
         console.log(error);
     })
 
-let listadoTracks = document.querySelector(`#tracks`);
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo}/tracks?key=${apiKey}`)
+    let listadoTracks = document.querySelector(`#tracks`);
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo}/tracks?key=${apiKey}`)
     .then(response =>{
         return response.json()
     })
@@ -61,8 +63,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo
         console.log(error);
     })
 
-let listadoArtistas = document.querySelector(`#artists`);
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo}/artists?key=${apiKey}`)
+    let listadoArtistas = document.querySelector(`#artists`);
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo}/artists?key=${apiKey}`)
     .then(response =>{
         return response.json()
     })
@@ -82,3 +84,4 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/${codigo
     .catch (error =>{
         console.log(error);
     })
+})
