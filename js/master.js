@@ -26,7 +26,7 @@ window.addEventListener (`load`, function(){
         listadoAlbums.innerHTML +=
         `<li>
             <a href="albums.html?id=${data[i].id}">
-                <img src= ${data[i].cover_xl}>
+                <img src= "${data[i].cover_xl}">
                 <h4> ${data[i].title}</h4>
                 <p> Álbum • ${data[i].artist.name} </p>
             </a>
@@ -51,7 +51,7 @@ window.addEventListener (`load`, function(){
         listadoTracks.innerHTML +=
         `<li>
             <a href="canciones.html?id=${data[i].id}">
-                <img src= ${data[i].album.cover_xl}>
+                <img src= "${data[i].album.cover_xl}">
                 <h4> ${data[i].title}</h4>
                 <p> Canción • ${data[i].artist.name} </p>
             </a>
@@ -74,7 +74,7 @@ window.addEventListener (`load`, function(){
         listadoArtistas.innerHTML +=
         `<li>
             <a href="artistas.html?id=${data[i].id}">
-                <img src= ${data[i].picture_big}>
+                <img src= "${data[i].picture_big}">
                 <h4> ${data[i].name}</h4>
             </a>
         </li>

@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
        let reproducir = document.querySelector(".playback")
        let reproductor=document.querySelector(".contenedor")
        reproducir.addEventListener("click",function(){
-reproductor.innerHTML=`<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=100%&height=2&color=007FEB&layout=dark&size=medium&type=tracks&id=${infoTracks.id}&app_id=1" width="100%" height="62px"></iframe>`
+reproductor.innerHTML=`<iframe scrolling="no" frameborder="0" allowTransparency="true" id="reproductor"src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=100%&height=2&color=007FEB&layout=dark&size=medium&type=tracks&id=${infoTracks.id}&app_id=1" width="100%" height="62px"></iframe>`
        })
     })
 
