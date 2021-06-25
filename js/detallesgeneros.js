@@ -12,15 +12,13 @@ window.addEventListener("load", function(){
 
     let querystring=location.search
     let queryString =new URLSearchParams(querystring)
-    let id = queryString.get("iddelgenero")
-
+    let id = queryString.get("id")
+    
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}`)
     .then(response =>{
         return response.json();
-        
     })
     .then(data =>{
-        console.log(data)
         nombreDelGenero.innerHTML += `Artistas de ${data.name}`;
     })
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${id}/artists`)
@@ -30,14 +28,19 @@ window.addEventListener("load", function(){
     })
     .then(infoArtista =>{
         console.log(infoArtista)
+        
         for (let i=0;i<5;i++){
-            artistas.innerHTML+= `
+            artistas.innerHTML+= 
+            `
                 <li>
                     <a href= "artistas.html?id=${infoArtista.data[i].id}">
                         <img src="${infoArtista.data[i].picture_xl}" alt="Foto no disponible">
-                        <h4> ${infoartista.data[i].name}</h4>
+                        <h4> ${infoArtista.data[i].name}</h4>
                     </a>
                 </li>`
         }   
-    })     
+    })  
+    .catch (error =>{
+        console.log(error);
+    })   
 })

@@ -1,86 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Álbumes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/albumes.css">
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Álbumes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/albumes.css">
 
-</head>
-<body>
-    <main class="container">
-        <header class="encabezado">
-            <nav class="mainnav">
-                
-                <input type="checkbox" id="check">
-
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                
-                <h1 class="logo">MUSIFY</h1>
-
-                <ul class="paginas">
-                    <li><form action="" class="form1">
-                        <input type="text" name="searchBar" class="searchBar"
-                        placeholder="Buscar"/>
-                    </form></li>
-                    <li><a  href="inicio.html"><i class="bi bi-house-door"></i> Inicio</a></li>
-                    <li><a href="generos.html"><i class="bi bi-headphones"></i> Géneros</a></li>
-                    <li><a href="albums.html"><i class="bi bi-vinyl-fill"></i> Álbumes</a></li>
-                    <li><a href="artistas.html"><i class="bi bi-person-fill"></i> Artistas</a></li>
-                    <li><a href="canciones.html"><i class="bi bi-caret-right-fill"></i> Canciones</a></li>
-                    <li><a href="miplaylist.html"><i class="bi bi-stack"></i> Playlist</a></li>
-                </ul>
-                </ul>
-            </nav>  
-        </header>
-
-        <section class="contenido"> 
-            <div class="div1_1">
-                <div class="top">
-                    <span class="back"><i onclick="goBack()" class="fas fa-chevron-left"></i></span>
-                    <form action="" class="form2">
-                        <i class="bi bi-search" id="lupa"></i>
-                        <input type="text" name="searchBar" class="searchBar"
-                        placeholder="Buscar"/>
-                    </form>
-                    <span class="forward"><i onclick="goForward()" class="fas fa-chevron-right"></i></span>
-                </div>
-                <div class="div1" id="divart">
+    </head>
+    <body>
+        <main class="container">
+            <header class="encabezado">
+                <nav class="mainnav">
                     
+                    <input type="checkbox" id="check">
+
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    
+                    <h1 class="logo">MUSIFY</h1>
+
+                    <ul class="paginas">
+                        <li><form action="" class="form1">
+                            <input type="text" name="searchBar" class="searchBar"
+                            placeholder="Buscar"/>
+                        </form></li>
+                        <li><a  href="inicio.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                        <li><a href="generos.html"><i class="bi bi-headphones"></i> Géneros</a></li>
+                        <li><a href="albums.html"><i class="bi bi-vinyl-fill"></i> Álbumes</a></li>
+                        <li><a href="artistas.html"><i class="bi bi-person-fill"></i> Artistas</a></li>
+                        <li><a href="canciones.html"><i class="bi bi-caret-right-fill"></i> Canciones</a></li>
+                        <li><a href="miplaylist.html"><i class="bi bi-stack"></i> Playlist</a></li>
+                    </ul>
+                    </ul>
+                </nav>  
+            </header>
+
+            <section class="contenido"> 
+                <div class="div1_1">
+                    <div class="top">
+                        <span class="back"><i onclick="goBack()" class="fas fa-chevron-left"></i></span>
+                        <form action="" class="form2">
+                            <i class="bi bi-search" id="lupa"></i>
+                            <input type="text" name="searchBar" class="searchBar"
+                            placeholder="Buscar"/>
+                        </form>
+                        <span class="forward"><i onclick="goForward()" class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="div1" id="divart">
+                        
+                    </div>
+                    <div class="songsInfo">
+                        <ol class="ulSongs">
+                            
+                        </ol>
+                    </div>
+                </div>  
+
+            </section>
+
+            <footer class="footer">  
+                <div class="div2">
+                    <ul class="redes"> 
+                        <li> <a href="mailto:cmartinezmori@udesa.edu.ar"><i class="fas fa-envelope" ></i></a></li> 
+                    
+                        <li> <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram "></i></a></li>
+        
+                        <li><a href="tel:153445035"><i class="fas fa-phone-alt"></i></a></li>
+        
+                        <li> <a href="https://www.twitter.com"target=_blank><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                    <ul class="creadores"> Creadores
+                        <li>Azul de Gamboa</li>
+                        <li>Carmela Martínez Mori</li>
+                        <li>Delfina Boglione</li>
+                    </ul>
+                    <p>2021</p>
                 </div>
-            </div>                   
-         </section>
-
-        <footer class="footer">  
-            <div class="div2">
-                <ul class="redes"> 
-                     <li> <a href="mailto:cmartinezmori@udesa.edu.ar"><i class="fas fa-envelope" ></i></a></li> 
                 
-                    <li> <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram "></i></a></li>
-    
-                    <li><a href="tel:153445035"><i class="fas fa-phone-alt"></i></a></li>
-    
-                    <li> <a href="https://www.twitter.com"target=_blank><i class="fab fa-twitter"></i></a></li>
-                </ul>
-                <ul class="creadores"> Creadores
-                    <li>Azul de Gamboa</li>
-                    <li>Carmela Martínez Mori</li>
-                    <li>Delfina Boglione</li>
-                </ul>
-                <p>2021</p>
-            </div>
-            
-        </footer>
+            </footer>
 
-    </main>
-    <script src="js/detallealbum.js"></script>
-</body>
-</html>
+        </main>
+        <script src="js/detallealbum.js"></script>
+    </body>
+    </html>
