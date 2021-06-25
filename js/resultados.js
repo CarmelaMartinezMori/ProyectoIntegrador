@@ -8,16 +8,10 @@ function goForward() {
 
 window.addEventListener(`load`, function(){
   //Agregar spinner
-  
-  //spinnerWrapper.parentElement.removeChild(spinnerWrapper);
-
-  
+  let spinnerWrapper = document.querySelector('.spinner-wrapper');
   setTimeout(function () {
-    let spinnerWrapper = document.querySelector('.spinner-wrapper');
-  spinnerWrapper.style.visibility = 'hidden';
-   }, 1500);
-
-
+    spinnerWrapper.style.visibility = 'hidden';
+  }, 1500);
 
   let apiKey = `6ee4ba95329b7c4561d268ce9d34aca3`;
 
@@ -61,55 +55,56 @@ window.addEventListener(`load`, function(){
     .catch (error =>{
       console.log(error);
   })
+
   let artistas =document.getElementById("artists");
   fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${buscar}&key=${apiKey}`)
-  .then(response =>{
-    return response.json()
-  })
+    .then(response =>{
+      return response.json()
+    })
     .then (infoArtista =>{
-    let resultadosArtistas = infoArtista.data;
-    if (resultadosArtistas == null){
-      error2.innerHTML += `<h3> No se encontraron resultados en Artistas </h3>`;
-    } else{
-      for(let i=0;i<5;i++){
-        artistas.innerHTML +=
-          `<li>
-            <a href="artistas.html?id=${resultadosArtistas[i].id}">
-              <img src= ${resultadosArtistas[i].picture_big}>
-              <h4> ${resultadosArtistas[i].name}</h4>
-            </a>
-          </li>`}
-    }
-  })
-  .catch (error =>{
+      let resultadosArtistas = infoArtista.data;
+      if (resultadosArtistas == null){
+        error2.innerHTML += `<h3> No se encontraron resultados en Artistas </h3>`;
+      } else{
+          for(let i=0;i<5;i++){
+          artistas.innerHTML +=
+            `<li>
+              <a href="artistas.html?id=${resultadosArtistas[i].id}">
+                <img src= ${resultadosArtistas[i].picture_big}>
+                <h4> ${resultadosArtistas[i].name}</h4>
+              </a>
+            </li>`
+          }
+        }
+    })
+    .catch (error =>{
     console.log(error);
-  })
+    })
 
   let tracks =document.getElementById("tracks");
   fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${buscar}&key=${apiKey}`)
-  .then(response =>{
+    .then(response =>{
     return response.json()
-  })
+    })
     .then (infoTrack =>{
-    let resultadosTracks = infoTrack.data;
-    console.log(resultadosTracks);
-    if (resultadosTracks == null){
-      error2.innerHTML += `<h3> No se encontraron resultados en Canciones </h3>`;
-    }else{
-      for(let i=0;i<5;i++){
-        tracks.innerHTML +=
-          `<li>
-            <a href="canciones.html?id=${resultadosTracks[i].id}">
-              <img src= ${resultadosTracks[i].album.cover_xl}>
-              <h4> ${resultadosTracks[i].title}</h4>
-              <p> Canción • ${resultadosTracks[i].artist.name} </p>
-          </a>
-      </li>`}
-    }
-    
-  })
+      let resultadosTracks = infoTrack.data;
+      console.log(resultadosTracks);
+      if (resultadosTracks == null){
+        error2.innerHTML += `<h3> No se encontraron resultados en Canciones </h3>`;
+      }else{
+        for(let i=0;i<5;i++){
+          tracks.innerHTML +=
+            `<li>
+                <a href="canciones.html?id=${resultadosTracks[i].id}">
+                  <img src= ${resultadosTracks[i].album.cover_xl}>
+                  <h4> ${resultadosTracks[i].title}</h4>
+                  <p> Canción • ${resultadosTracks[i].artist.name} </p>
+              </a>
+           </li>`
+        }
+      }
+    })
   .catch (error =>{
     console.log(error);
   })
-  
 })
