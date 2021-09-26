@@ -24,7 +24,7 @@ window.addEventListener(`load`,function(){
             nombre.focus()
     
         }else if (nombre.value.length < 3){
-            mensaje.innerHTML = `Ingresa más letras puto`;
+            mensaje.innerHTML = `Ingresa más letras`;
             nombre.focus()
             //.classlist.toggle (si existe se lo quita, si no se lo coloca)
         }
